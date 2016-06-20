@@ -16,10 +16,10 @@
             this.topic = '';
             this.notified = false;
             this.complete = false;
-        };
+        }
 
         function addMutant() {
             vm.mutants.push(vm.newMutant);
-        };
+        }
     }
 })();
