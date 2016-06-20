@@ -9,6 +9,7 @@
         'firebase',
 
         //Main modules
-        'mutantApp.home'
+        'mutantApp.home',
+        'mutantApp.mutantList'
     ]);
 })();
