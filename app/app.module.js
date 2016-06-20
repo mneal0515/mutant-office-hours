@@ -6,6 +6,9 @@
         'ui.router',
         
         //3rd Party modules
-        'firebase'
+        'firebase',
+
+        //Main modules
+        'mutantApp.home'
     ]);
 })();
