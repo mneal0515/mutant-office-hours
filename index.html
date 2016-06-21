@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="mutantApp">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./app/content/css/app.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./app/content/css/app.css">
 
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
 
-<body>
-<div ui-view class="row" id="main"></div>
-<!--Third Party App Dependencies-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-loader.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <body>
+        <div ui-view class="row" id="main"></div>
+            <!--Third Party App Dependencies-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-loader.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/3.0.4/firebase.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angularFire/2.0.1/angularfire.min.js"></script>
 
-<!--Main app modules-->
-<script src="./app/app.module.js"></script>
+            <!--Main app modules-->
+            <script src="./app/app.module.js"></script>
 
-<!--Home modules-->
-<script src="./app/home/home.module.js"></script>
-<script src="./app/home/config.route.js"></script>
+            <!--Home modules-->
+            <script src="./app/home/home.module.js"></script>
+            <script src="./app/home/config.route.js"></script>
 
-<!--mutantList modules-->
-<script src="./app/mutantList/mutantList.module.js"></script>
-<script src="./app/mutantList/mutantList.controller.js"></script>
-<script src="./app/mutantList/config.route.js"></script>
+            <!--mutantList modules-->
+            <script src="./app/mutantList/mutantList.module.js"></script>
+            <script src="./app/mutantList/mutantList.controller.js"></script>
+            <script src="./app/mutantList/config.route.js"></script>
 
-<!--Firebase modules-->
-<script src="./app/firebaseConfig.js"></script>
-</body>
+            <!--Firebase modules-->
+            <script src="./app/firebaseConfig.js"></script>
+    </body>
 </html>
