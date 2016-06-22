@@ -1,3 +1,12 @@
-/**
- * Created by matt on 6/22/2016.
- */
+(function() {
+    'use strict';
+
+    angular.module('mutantApp.auth').controller('AuthController', AuthController);
+
+    AuthController.$inject = [];
+
+    function AuthController() {
+        var vm = this;
+    };
+
+})();
