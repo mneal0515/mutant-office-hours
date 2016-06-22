@@ -28,4 +28,31 @@ table {
 .log-in-form {
     border: 1px solid #cacaca;
     padding: 1rem;
-    border-radius: 3px; }
+    border-radius: 3px;
+}
+
+.title-bar {
+    background: #333;
+    padding: 0.9rem;
+}
+
+.top-bar {
+    background: #333;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.top-bar ul {
+    background: #333;
+}
+
+.top-bar ul li {
+    background: #333;
+}
+
+.top-bar ul li a {
+    color: #fff;
+}
+
+.menu-text {
+    color: #fff;
+}
