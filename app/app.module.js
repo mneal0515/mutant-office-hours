@@ -10,6 +10,7 @@
 
         //Main modules
         'mutantApp.home',
-        'mutantApp.mutantList'
+        'mutantApp.mutantList',
+        'mutantApp.auth'
     ]);
 })();
