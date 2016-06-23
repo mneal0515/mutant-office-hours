@@ -11,6 +11,7 @@
         //Main modules
         'mutantApp.home',
         'mutantApp.mutantList',
-        'mutantApp.auth'
+        'mutantApp.auth',
+        'mutantApp.core'
     ]);
 })();
