@@ -16,7 +16,7 @@
             logout: logout,
             isLoggedIn: isLoggedIn,
             auth: auth,
-            sendWelcomeEmail: sendWelcomeEmail,
+            sendWelcomeEmail: sendWelcomeEmail
         };
 
         return service;
