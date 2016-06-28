@@ -3,7 +3,7 @@
         <input ng-model="vm.newMutant.name" type="text" name="mutantName" placeholder="Name" required>
     </div>
     <div class="medium-3 small-6 columns">
-        <input ng-model="vm.newMutant.phone" type="number" name="phone" placeholder="Phone #" required>
+        <input ng-model="vm.newMutant.phone" type="text" name="phone" placeholder="Phone #" required>
     </div>
     <div class="medium-4 small-8 columns">
         <input ng-model="vm.newMutant.topic" type="text" name="topic" placeholder="Topic" required>
@@ -14,29 +14,28 @@
 </form>
 
 <div class="small-12 columns">
- <table class="hover">
-     <thead>
-         <tr>
+    <table class="hover">
+        <thead>
+        <tr>
             <th>Name</th>
             <th>Phone</th>
             <th>Topic</th>
             <th>Notified</th>
             <th>Complete</th>
             <th>Actions</th>
-         </tr>
-     </thead>
-     <tbody>
+        </tr>
+        </thead>
+        <tbody>
         <tr ng-repeat="mutant in vm.mutants">
             <td>{{ mutant.name }}</td>
             <td>{{ mutant.phone }}</td>
             <td>{{ mutant.topic }}</td>
-            <td>{{ mutant.notified }}</td>
+            <td>{{ mutant.notified ? 'Yes' : 'No' }}</td>
             <td><input type="checkbox" ng-model="mutant.complete" ng-change="vm.toggleComplete(mutant)"></td>
             <td>
                 <button ng-click="vm.sendText(mutant)" class="button success">Text</button>
                 <button ng-click="vm.deleteMutant(mutant)" class="button alert">Delete</button>
-            </td>
         </tr>
-     </tbody>
- </table>
+        </tbody>
+    </table>
 </div>

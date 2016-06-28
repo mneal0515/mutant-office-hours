@@ -33,7 +33,7 @@
 
         function login(user) {
             return authService.login(user)
-                .then(function(user) {
+                .then(function(loggedInUser) {
                     $state.go('mutantList');
                 })
                 .catch(function(error) {

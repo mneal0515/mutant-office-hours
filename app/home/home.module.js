@@ -1,6 +1,6 @@
 (function() {
     'use strict';
 
-    angular.module('mutantApp.home',[]);
-    
+    angular.module('mutantApp.home', []);
+
 })();

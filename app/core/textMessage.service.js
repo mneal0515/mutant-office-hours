@@ -14,12 +14,12 @@
 
         return service;
 
-        //////////////
+        ////////////
 
         function sendText(mutant, mutants) {
             var newText = {
-                name: mutant.name,
                 topic: mutant.topic,
+                name: mutant.name,
                 phoneNumber: mutant.phone
             };
             firebaseDataService.texts.push(newText);

@@ -1,7 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('mutantApp.auth').config(configFunction);
+    angular
+        .module('mutantApp.auth')
+        .config(configFunction);
 
     configFunction.$inject = ['$stateProvider'];
 
@@ -18,5 +20,5 @@
             controller: 'AuthController',
             controllerAs: 'vm'
         });
-    };
+    }
 })();
