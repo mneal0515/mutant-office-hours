@@ -10,7 +10,8 @@
     function mutantService($firebaseArray, firebaseDataService) {
         var service = {
             Mutant: Mutant,
-            mutants: $firebaseArray(firebaseDataService.mutants)
+            mutantsByUser: mutantsByUser,
+            reset: reset
         };
 
         return service;
@@ -25,5 +26,18 @@
             this.complete = false;
         }
 
+        function mutantsByUser(uid) {
+            if(!mutants) {
+                mutants = $firebaseArray(firebaseDataService.users.child(uid).child('mutants'));
+            }
+            return mutants;
+        }
+
+        function reset() {
+            if (mutants) {
+                mutants.$destroy();
+                mutants = null;
+            }
+        }
     }
 })();

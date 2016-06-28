@@ -9,7 +9,7 @@
 
     function textMessageService(firebaseDataService) {
         var service = {
-            sendText: sendText,
+            sendText: sendText
         };
 
         return service;
